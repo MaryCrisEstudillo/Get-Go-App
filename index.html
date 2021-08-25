@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Get Go App</title>
+</head>
+<body>
+    <div id="map"></div>
+    <!-- <div id="alert"></div> -->
+    <div id="blackBG"></div>
+    <div id="modalAlert"></div>
+    <div id="modalAlertBtn">CLOSE</div>
+    <div id="menuContainer" class="menuContainersAll">
+        <img src="" alt="" >
+        <b></b>
+    <div id="menuButtonsContainer1" class="menuContainersAll">
+        <p id="whatsInTheBagMenuBtns">What's in the Bag?</p>
+        <div class="menuButtons" id="menuBtnEmergncyKit" onclick="emergncyKitListCon()">EMERGENCY KIT</div>
+        <div class="menuButtons" id="menuBtnDocuments" onclick="documentsListCon()">DOCUMENTS</div>
+        <div class="menuButtons" id="menuBtnMedicines" onclick="medicinesListCon()">MEDICINES</div>
+        <div class="menuButtons" id="menuBtnFoods" onclick="foodsListCon()">FOODS</div>
+        <div class="menuButtons" id="menuBtnClothes" onclick="clothesListCon()">CLOTHES</div>
+        <div class="menuButtons" id="menuBtnInventory"  onclick="inventoryListCon()">INVENTORY</div>
+        <div class="menuButtons" id="addContactNumForm"  onclick="addContact()">ADD CONTACT</div>
+    </div>
+    <div id="menuButtonsContainer2" class="menuContainersAll">
+        <p id="otherHelp">Other Help</p>
+        <div class="menubuttonsHelp" id="menuBtnsContacts" onclick="emergencyContacts()">EMERGENCY CONTACTS</div>
+        <div class="menubuttonsHelp" id="menuBtnsGoogleMaps" onclick="googleMapsApi()">GOOGLE MAPS</div>
+    </div>
+</div>
+    <!-- Main page -->
+    <b id="logo">Get Go!</b>
+    <div id="navContainer" onclick="openNav()">
+        <div class="hamburgerNav" id="hamBrg1"></div>
+        <div class="hamburgerNav" id="hamBrg2"></div>
+        <div class="hamburgerNav" id="hamBrg3"></div>
+    </div>
+ <!--//////////////////////////////// INVENTORY FORM //////////////////////////////////////////////////// -->
+
+    
+    <form id="addItemFormInventory">
+        <input type="text" id="addItemInventory" class="addItemIputvalues" placeholder="Add Item">
+        <input type="submit" id="submitItemInventory" class="submitIputvalues" value="+">
+    </form>
+    <form class="formInside" id="formInsideInventory">
+        <div class="titleFormRed" id="titleFormInventory"></div>
+        <div class="inputTitle" id="expDateTitle">Expriration Date</div>
+        <input type="date" id="dateExpirationInventory" class="dateInput" >
+        <div class="inputTitle"id="rmDateTitle">Remind Me</div>
+        <input type="date" id="dateRemindMeInventory" class="dateInput" >
+        <div class="inputTitle"id="notesDateTitle">Notes</div>
+        <input type="text" class="detailsInputbox" id="inputNotesInventory">
+        <div id="category" class="inputTitle">Category:</div>
+        <Select id="selectByCategory" class="detailsInputbox">
+            <option value="">Choose:</option>
+            <option value="Emergency Kit">Emergency Kit</option>
+            <option value="Documents">Documents</option>
+            <option value="Medicines">Medicines</option>
+            <option value="Foods">Foods</option>
+            <option value="Clothes">Clothes</option>
+        </Select>
+        <input type="submit" class="submit" id="formSubmitInventory" value="SUBMIT">
+        <!-- <input type="submit" class="submitBttn" id="formDeleteInventory"value="DELETE"> -->
+    </form>
+<!--//////////////////////////////// EMERGENCY KIT //////////////////////////////////////////////////// -->
+     <form id="addItemFormEmergensyKit">
+        <input type="text" id="addItemEmergensyKit" class="addItemIputvalues" placeholder=" Add Emergency Kit">
+        <input type="submit" id="submitItemEmergensyKit" class="submitIputvalues" value="+">
+    </form>
+    <form class="formInside" id="formInsideEmergensyKit">
+        <div class="titleFormRed" id="titleFormEmergensyKit"></div>
+        <div class="inputTitle" id="expDateTitleEk">Expriration Date</div>
+        <input type="date" id="dateExpirationEmergensyKit" class="dateInput">
+        <div class="inputTitle" id="rmDateTitleEk">Remind Me</div>
+        <input type="date" id="dateRemindMeEmergensyKit" class="dateInput">
+        <div class="inputTitle" id="notesDateTitleEk">Notes</div>
+        <input type="text" class="detailsInputbox" id="inputNotesEmergensyKit">
+        <div class="inputTitle" id="categoryEmergensyKit">Category: <p>Emergency Kit</p></div>
+        <input type="submit" class="submit" id="formSubmitEmergensyKit" value="SUBMIT">
+    </form>
+<!--//////////////////////////////// DOCUMENTS //////////////////////////////////////////////////// -->
+    <form id="addItemFormDocuments">
+        <input type="text" id="addItemDocuments" class="addItemIputvalues" placeholder="Add Documents">
+        <input type="submit" id="submitItemDocuments" class="submitIputvalues" value="+">
+    </form>
+    <form class="formInside" id="formInsideDocuments">
+        <div class="titleFormRed" id="titleFormDocuments"></div>
+        <div class="inputTitle" id="expDateTitleDocu">Expration Date</div>
+        <input type="date" id="dateExpirationDocuments" class="dateInput">
+        <div class="inputTitle" id="rmDateTitleDocu">Remind Me</div>
+        <input type="date" id="dateRemindMeDocuments" class="dateInput">
+        <div class="inputTitle" id="notesDateTitleDocu">Notes</div>
+        <input type="text" class="detailsInputbox" id="inputNotesDocuments">
+        <div class="inputTitle" id="categoryDocuments">Category: <p>Documents</p></div>
+        <input type="submit" class="submit" id="formSubmitDocuments" value="SUBMIT">
+    </form>
+<!--//////////////////////////////// MEDICINES //////////////////////////////////////////////////// -->
+    <form id="addItemFormMedicines">
+        <input type="text" id="addItemMedicines" class="addItemIputvalues" placeholder="Add Medicines">
+        <input type="submit" id="submitItemMedicines" class="submitIputvalues" value="+">
+    </form>
+    <form class="formInside" id="formInsideMedicines">
+        <div class="titleFormRed" id="titleFormMedicines"></div>
+        <div class="inputTitle" id="expDateTitleMed">Expration Date</div>
+        <input type="date" id="dateExpirationMedicines" class="dateInput">
+        <div class="inputTitle" id="rmDateTitleMed">Remind Me</div>
+        <input type="date" id="dateRemindMeMedicines" class="dateInput">
+        <div class="inputTitle" id="notesDateTitleMed">Notes</div>
+        <input type="text" class="detailsInputbox" id="inputNotesMedicines">
+        <div class="inputTitle" id="categoryMedicines">Category: <p>Medicines</p></div>
+        <input type="submit" class="submit" id="formSubmitMedicines" value="SUBMIT">
+    </form>
+<!--//////////////////////////////// FOODS //////////////////////////////////////////////////// -->
+    <form id="addItemFormFoods">
+        <input type="text" id="addItemFoods" class="addItemIputvalues" placeholder="Add Foods">
+        <input type="submit" id="submitItemFoods" class="submitIputvalues" value="+">
+    </form>
+    <form class="formInside" id="formInsideFoods">
+        <div class="titleFormRed" id="titleFormFoods"></div>
+        <div class="inputTitle" id="expDateTitleFoods">Expration Date</div>
+        <input type="date" id="dateExpirationFoods" class="dateInput">
+        <div class="inputTitle" id="rmDateTitleFoods">Remind Me</div>
+        <input type="date" id="dateRemindMeFoods" class="dateInput">
+        <div class="inputTitle" id="notesDateTitleFoods">Notes</div>
+        <input type="text" class="detailsInputbox" id="inputNotesFoods">
+        <div class="inputTitle" id="categoryFoods">Category: <p>Foods</p></div>
+        <input type="submit" class="submit" id="formSubmitFoods" value="SUBMIT">
+    </form>
+<!--////////////////////////////////CLOTHES//////////////////////////////////////////////////// -->
+    <form id="addItemFormClothes">
+        <input type="text" id="addItemClothes" class="addItemIputvalues" placeholder="Add Clothes">
+        <input type="submit" id="submitItemClothes" class="submitIputvalues" value="+">
+    </form>
+    <form class="formInside" id="formInsideClothes">
+        <div class="titleFormRed" id="titleFormClothes"></div>
+        <div class="inputTitle" id="expDateTitleClothes">Expration Date</div>
+        <input type="date" id="dateExpirationClothes" class="dateInput">
+        <div class="inputTitle" id="rmDateTitleClothes">Remind Me</div>
+        <input type="date" id="dateRemindMeClothes" class="dateInput">
+        <div class="inputTitle" id="notesDateTitleClothes">Notes</div>
+        <input type="text" class="detailsInputbox" id="inputNotesClothes">
+        <div class="inputTitle" id="categoryClothes">Category: <p>Clothes</p></div>
+        <input type="submit" class="submit" id="formSubmitClothes" value="SUBMIT">
+    </form>
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<div id="modalContainerAndTitle" class="modalClass"></div>
+<div id="contactsContainer" class="modalClass"></div>
+<div id="closeContactContainer" class="submitBttn">CLOSE</div>
+<div id="modalInside" class="modalClass"></div>
+
+<div id="blackBgTwo"></div>
+<div id="listContainerInventory" class="listContainersByCategory">
+        <div id="mainWitB">What's in the Bag?</div>
+        <div id="resultsInventory" class="resultsPerCategory"></div>
+</div>
+
+<div id="listContainerEmergencyKit"  class="listContainersByCategory">
+    <b>EMERGENCY KIT LIST</b>
+    <div id="resultsEmergencyKit" class="resultsPerCategory"></div>
+</div>
+<div id="listContainerDocuments" class="listContainersByCategory">
+    <b>DOCUMENTS LIST</b>
+    <div id="resultsDocuments" class="resultsPerCategory"></div>
+</div>
+<div id="listContainerMedicines" class="listContainersByCategory">
+    <b>MEDICINES LIST</b>
+    <div id="resultsMedicines" class="resultsPerCategory"></div>
+</div>
+<div id="listContainerFoods" class="listContainersByCategory">
+    <b>FOODS LIST</b>
+    <div id="resultsFoods" class="resultsPerCategory"></div>
+</div>
+<div id="listContainerClothes" class="listContainersByCategory">
+    <b>CLOTHES LIST</b>
+    <div id="resultsClothes" class="resultsPerCategory"></div>
+</div>
+<form id="addContactContainer">
+<div class="addContactTitle" id="nameId">Name</div>
+<input type="text"  id="addName" class="addContactInput" placeholder="Add Name">
+<div class="addContactTitle" id="emailId">Email</div>
+<input type="email"  id="addEmail"class="addContactInput" placeholder="Add Email">
+<div class="addContactTitle" id="contactNumId">Contact Number</div>
+<input type="number"  id="addNumber"class="addContactInput" placeholder="Add Contact">
+<div class="addContactTitle" id="detailId">Details</div>
+<input type="text"  id="addDetails"class="addContactInput" >
+<input type="submit" id="submitAddContacts">
+</form>    
+</body>
+<script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDkcUv1ygs_CHHKh0yYtUCGLyvhxuVtwCk
+&callback=initMap">
+</script>
+<script src="script.js"></script>
+<script src="googlemaps.js"></script>
+
+</html>

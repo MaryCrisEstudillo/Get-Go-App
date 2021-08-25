@@ -1,0 +1,884 @@
+*{
+    outline: none;
+    margin: 0;
+}
+body{
+    background-size: cover;
+    background-color: #BF2E38;
+    overflow: hidden; 
+}
+#map{
+    position: absolute;
+    background-color: #ffffff;
+    width: 100vw;
+    height: 100vh;
+    z-index: 20;
+    visibility: hidden;
+}
+#logo{
+    position: absolute;
+    top: 5vw;
+    left: 32vw;
+    color: white;
+    font-weight: 700;
+    font-size: 10vw;
+    font-family: 'Montserrat', sans-serif;
+}
+.listContainersByCategory{
+    position: absolute;
+    background-color: rgb(20, 20, 20);
+    height: 82vh;
+    width: 100vw;
+    margin-top: 33.5vw;
+    text-align: center;
+    border-radius: 15vw 15vw 0vw 0vw;
+
+} 
+.listContainersByCategory b {
+    position: absolute;
+    width: 100vw;
+    left: 0vw;
+    margin-top: 5vw;
+    color: #BF2E38;
+    font-size: 5vw;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+
+}
+    #listContainerEmergencyKit{                 /*Have to hide*/
+        visibility: hidden;
+    }
+    #listContainerDocuments{
+        /* position: absolute; */               /*Have to hide*/
+        visibility: hidden;
+    }
+    #listContainerMedicines{                    /*Have to hide*/
+        visibility: hidden;
+    }
+    #listContainerFoods{                        /*Have to hide*/
+        visibility: hidden;
+    }
+    #listContainerClothes{
+        visibility: hidden;                     /*Have to hide*/
+    }
+#mainWitB{
+    text-align: center;
+    padding-top: 6vw;
+    font-size: 5vw;
+    font-family: 'Montserrat', sans-serif;
+    color: #BF2E38;
+    margin-bottom: 20vw;
+}
+#navContainer{
+    position: absolute;
+    width: 12vw;
+    height: 10vw;
+    left: 7vw;
+    margin-top: 7.5vw;
+    /* background-color: black; */
+    z-index: 0;
+    cursor: pointer;
+
+}
+.hamburgerNav{
+    position: absolute;
+    width: 12vw;
+    height: 1.5vw;
+    background-color: rgb(20, 20, 20);
+    border-radius: 4vw;
+}
+#hamBrg2{
+    margin-top:3vw;
+}
+#hamBrg3{
+    margin-top:6vw;
+}
+#addItemFormInventory{
+    position: absolute;
+    z-index: 1;
+}
+.addItemIputvalues{
+    background-color: rgb(20, 20, 20);
+    top: 19vw;
+    left: 7vw;
+    width: 80vw;
+    height: 10vw;
+    position: absolute;                     /*////must hide////*/
+    border-radius: 8vw;
+    border: none;
+    font-size: 4vw;
+    padding-left: 5vw;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(255, 255, 255);
+}
+.addItemIputvalues::placeholder{
+    color: rgb(85, 85, 85);
+}
+.submitIputvalues{
+    position: absolute;
+    left:83vw;
+    top: 20.2vw;
+    width: 8vw;
+    height: 8vw;
+    border-radius: 20vw;
+    border: none;
+    color: white;
+    background-color: #BF2E38;
+    font-size: 5vw;
+    visibility: hidden;
+}
+::placeholder{
+    color: rgb(201, 201, 201);
+}
+
+/* MENU PAGE */
+#blackBG{
+position: absolute;
+width: 100VW;
+height: 173vw;                                    /*Have to hide*/
+background-color: black;
+opacity: 60%;
+z-index: 16;
+visibility: hidden;
+}
+#blackBgTwo{
+position: absolute;
+width: 100VW;
+height: 170.3vw;                                    /*Have to hide*/
+background-color: black;
+opacity: 60%;
+z-index: 17;
+visibility: hidden;
+}
+
+.menuContainersAll{
+position: absolute;
+width: 78vw;                                        /*Have to hide*/
+z-index: 18;
+visibility: hidden;
+}
+#menuContainer{
+height: 173.9vw;
+background-color: rgb(20, 20, 20);
+margin-top: -3.8VW;
+}
+#menuButtonsContainer1{
+display: flex;
+flex-direction: column;
+position: absolute;
+z-index: 16;
+align-items: center;
+height: 145.3vw;
+background-color:#BF2E38;
+margin-top: 20VW;
+border-radius: 16vw 16vw 0vw 0vw;
+box-shadow: 0vw -.7vw .5vw -.5vw rgba(0, 0, 0, 0.363);
+}
+#whatsInTheBagMenuBtns{
+    position: absolute;
+    font-size: 4vw;
+    color: rgb(0, 0, 0);
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 8vw;
+    left: 20vw;
+    z-index: 1;
+}
+.menuButtons{
+
+    top: 7vw;
+    width: 76.8vw;
+    height: 7vw;
+    position: absolute;
+    z-index: 1;
+    font-size: 4.5vw;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding-top: 1vw;
+}
+.menuButtons:hover{
+    border: .6vw solid white;
+    cursor: pointer;
+    border-radius: 4vw;
+}
+.menuButtons:active{
+    background-color: rgb(20, 20, 20);
+    color: #BF2E38;
+    cursor: pointer;
+    border-radius: 4vw;
+    border: .6vw solid rgb(20, 20, 20);
+}
+#menuBtnEmergncyKit{
+    margin-top:14vw;
+}
+#menuBtnDocuments{
+    margin-top:23vw;
+}
+#menuBtnMedicines{
+    margin-top:32vw;
+}
+#menuBtnFoods{
+    margin-top:41vw;
+}
+#menuBtnClothes{
+    margin-top:50vw;
+}
+#menuBtnInventory{
+    margin-top:59vw;
+
+}
+#menuBtnUpdateItem{
+    margin-top:68vw;
+
+}
+#menuItemsContainerFail{
+    margin-top:77vw;
+}
+#addContactNumForm{
+    margin-top:68vw;
+}
+
+#menuButtonsContainer2{
+    height: 65vw;
+    background-color:rgb(20, 20, 20);
+    margin-top: 110vw;
+    border-radius: 16vw 16vw 0vw 0vw;
+    box-shadow: 0vw -.7vw .5vw -.5vw rgba(255, 255, 255, 0.418);
+    width: 78.3vw;
+    }
+    #otherHelp{
+        position: absolute;
+        font-size: 4vw;
+        color: #74282c;
+        font-family: 'Montserrat', sans-serif;
+        margin-top: 8vw;
+        left: 28vw;
+        z-index: 1;
+    }
+    .menubuttonsHelp{
+        top: 6vw;
+        width: 76.8vw;
+        height: 7vw;
+        position: absolute;
+        z-index: 1;
+        font-size: 4.5vw;
+        font-weight: 700;
+        color: #BF2E38;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        padding-top: 1vw;
+    
+    }
+    .menubuttonsHelp:hover{
+        border: .6vw solid #BF2E38;
+        cursor: pointer;
+        border-radius: 4vw;
+    }
+    .menubuttonsHelp:active{
+        background-color: #BF2E38;
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        border-radius: 4vw;
+        border: .6vw solid #BF2E38;
+    }
+    #menuBtnsContacts{
+        margin-top:14vw;
+    }
+    #menuBtnsWeatherUpdate{
+        margin-top:23vw;
+    }
+    #menuBtnsGoogleMaps{
+        margin-top:23vw;
+    }
+.resultsPerCategory{
+    /* height: 10vw; */
+    /* background-color: white; */
+    padding-bottom: 5vw;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    margin-top:7vw;
+}
+.listEach{
+    background-color: rgb(20, 20, 20);
+    /* border:.5vw solid black; */
+    height: 20vw;
+    width: 90vw;
+    padding-top: 4vw;
+    padding-left: 10vw;
+    color: #c5c5c5;
+    font-weight: 700;
+    font-size: 4vw ;
+    margin-top: -10vw;
+    box-shadow: 0vw -.7vw 1.5vw -.7vw rgba(255, 255, 255, 0.418);
+    border-radius: 10vw 10vw 0vw 0vw;
+    /* border-radius: 15vw 15vw 0vw 0vw; */
+    }
+    .createdbtnDiv{
+    background-color: #BF2E38;
+    width: 7vw;
+    height: 1.5vw;
+    margin-left: 68vw;
+    margin-top: -3vw;
+    cursor: pointer;
+    border-radius: 1.5vw;
+}
+.listEach:hover{
+    color: #BF2E38;
+    cursor: pointer;
+}       
+.listEach img{
+        position: absolute;
+        margin-top: -11vw;
+        padding: 1vw;
+        background-color: rgb(20, 20, 20);;
+        width: 8vw;
+        height: 5vw;
+        margin-left: 35vw;
+        cursor: pointer;
+        border-radius: 3vw;
+        box-shadow: 0vw -.7vw .5vw -.5vw rgba(255, 255, 255, 0.418);
+}
+.modalClass{
+    position: absolute;
+    background-color: rgb(20, 20, 20);
+    padding-bottom:30vw;
+    font-family: 'Montserrat', sans-serif;
+    width: 88vw;
+    padding-top: 8vw;
+    padding-left: 12vw;
+    padding-bottom: 8vw;
+    color: #c5c5c5;
+    font-weight: 700;
+    font-size: 4vw ;
+    margin-top: 55.5vw;
+    box-shadow: 0vw -.7vw 1.5vw -.4vw rgba(255, 255, 255, 0.418);
+    border-radius: 10vw 10vw 10vw 10vw;
+    z-index: 17;
+    visibility: hidden;
+}
+.modalList{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 4vw ;
+    list-style: none;
+    padding-bottom: 5vw;
+    margin-top: 5vw;
+    color: #c5c5c5;}
+
+
+.modalReminder{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4vw ;
+    color: #ffffff;
+}
+.modalTitle{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4vw ;
+    color: #BF2E38;
+}
+.modalListBtnClose{
+    position: absolute;
+    margin-top: -76vw;
+    padding: 1vw;
+    background-color: rgb(20, 20, 20);
+    width: 8vw;
+    height: 5vw;
+    margin-left: 33vw;
+    cursor: pointer;
+    border-radius: 3vw;
+    box-shadow: 0vw -.7vw .5vw -.5vw rgba(255, 255, 255, 0.418);
+}
+
+/* CREATED FORM INSIDE */
+.titleFormRed{
+    width: 85vw;
+    height: 10vw;
+    background-color: #BF2E38;
+    color: white;
+    margin-top: -25vw;
+    margin-bottom: 10vw;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 8vw;
+    text-align: center;
+    padding-top: 1vw;
+    font-size: 7vw;
+    font-weight: 700;
+    margin-left: -3vw;
+}
+.formInside{
+    color: #ffffff;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding-left: 10vw;
+    width: 90vw;
+    height: 80.3vh;                          
+    background-color: rgb(20, 20, 20);        /* NEEDS TO HIDE*/
+    position: absolute;
+    z-index: 10;
+    top: 0vw;
+    left: 0vw;
+    /* margin-top: -33.6vw; */
+    padding-top: 30vw;
+    visibility: hidden;
+}
+.dateInput::-webkit-calendar-picker-indicator{
+    position: absolute;
+    background-image: url(images/chevronDown.png);
+    height: 5vw;
+    width: 6vw;
+    padding-top: 4vw;
+    border: none;
+    outline: 0vw;
+    /* padding-right: -60vw; */
+    text-align: center;
+    color:rgb(20, 20, 20) ;
+    margin-left: 20vw;}
+    
+.dateInput{
+    margin-top:.8vw ;
+    font-size: 0vw;
+    margin-left: 25vw;
+    position: absolute;
+    background-color:rgb(20, 20, 20) ;
+    height: 12vw;
+    width: 30vw;
+    border: none;
+    outline: none;
+    z-index: 0;
+}
+#dateRemindMeInventory{
+    position: absolute;
+    margin-left: 12vw;
+    margin-top: 20.8vw;
+}
+.inputTitle{
+    position: absolute;
+    margin-top:5vw;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 5vw;
+    font-weight: 600;
+    color: #BF2E38;
+    padding-top:-3vw;
+}
+.inputTitle p{
+    color: rgb(167, 167, 167);
+    font-size: 4vw;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    margin-top: 5vw;
+}
+#expDateTitle{
+    background-color:rgb(20, 20, 20) ;
+    position: absolute;
+    z-index: 1;
+}
+#rmDateTitle{
+    background-color:rgb(20, 20, 20) ;
+    position: absolute;
+    margin-top: 25vw;
+    z-index: 1;
+}
+#notesDateTitle{
+    position: absolute;
+    margin-top: 45vw;
+}
+#inputNotesInventory{
+    position: absolute;
+    margin-top: 50vw;
+}
+#category{
+    position: absolute;
+    margin-top: 65vw;
+}
+/* /////////////////////////////EMERGENCY FORM INSIDE//////////////////////// */
+#expDateTitleEk{
+    background-color:rgb(20, 20, 20) ;
+    position: absolute;
+    z-index: 1;
+}
+#rmDateTitleEk{
+    background-color:rgb(20, 20, 20) ;
+    position: absolute;
+    margin-top: 25vw;
+    z-index: 1;
+}
+#notesDateTitleEk{
+    position: absolute;
+    margin-top: 45vw;
+}
+
+#dateRemindMeEmergensyKit{
+    position: absolute;
+    margin-left: 12vw;
+    margin-top: 20.8vw;
+}
+#inputNotesEmergensyKit{
+    position: absolute;
+    margin-top: 50vw;
+}
+
+#categoryEmergensyKit{
+    position: absolute;
+    margin-top: 65vw;
+}
+/* //////////////////////////////////////DOCUMENT FORM INSIDE////////////////////////////////////////////// */
+#expDateTitleDocu{
+    background-color:rgb(20, 20, 20) ;
+    position: absolute;
+    z-index: 1;
+}
+#rmDateTitleDocu{
+    background-color:rgb(20, 20, 20) ;
+    position: absolute;
+    margin-top: 25vw;
+    z-index: 1;
+}
+#notesDateTitleDocu{
+    position: absolute;
+    margin-top: 45vw;
+}
+
+#dateRemindMeDocuments{
+    position: absolute;
+    margin-left: 12vw;
+    margin-top: 20.8vw;
+}
+#inputNotesDocuments{
+    position: absolute;
+    margin-top: 50vw;
+}
+#categoryDocuments{
+    position: absolute;
+    margin-top: 65vw;
+}
+/* /////////////////////////////////////////MEDICINES FORM INSIDE///////////////////////////// */
+#expDateTitleMed{
+    background-color:rgb(20, 20, 20) ;
+    position: absolute;
+    z-index: 1;
+}
+#rmDateTitleMed{
+    background-color:rgb(20, 20, 20) ;
+    position: absolute;
+    margin-top: 25vw;
+    z-index: 1;
+}
+#notesDateTitleMed{
+    position: absolute;
+    margin-top: 45vw;
+}
+
+#dateRemindMeMedicines{
+    position: absolute;
+    margin-left: 12vw;
+    margin-top: 20.8vw;
+}
+#inputNotesMedicines{
+    position: absolute;
+    margin-top: 50vw;
+}
+#categoryMedicines{
+    position: absolute;
+    margin-top: 65vw;
+}
+/* /////////////////////////////////////////FOODS FORM INSIDE///////////////////////////// */
+#expDateTitleFoods{
+    background-color:rgb(20, 20, 20) ;
+    position: absolute;
+    z-index: 1;
+}
+#rmDateTitleFoods{
+    background-color:rgb(20, 20, 20) ;
+    position: absolute;
+    margin-top: 25vw;
+    z-index: 1;
+}
+#notesDateTitleFoods{
+    position: absolute;
+    margin-top: 45vw;
+}
+
+#dateRemindMeFoods{
+    position: absolute;
+    margin-left: 12vw;
+    margin-top: 20.8vw;
+}
+#inputNotesFoods{
+    position: absolute;
+    margin-top: 50vw;
+}
+#categoryFoods{
+    position: absolute;
+    margin-top: 65vw;
+}
+/* /////////////////////////////////////////CLOTHES FORM INSIDE///////////////////////////// */
+#expDateTitleClothes{
+    background-color:rgb(20, 20, 20) ;
+    position: absolute;
+    z-index: 1;
+}
+#rmDateTitleClothes{
+    background-color:rgb(20, 20, 20) ;
+    position: absolute;
+    margin-top: 25vw;
+    z-index: 1;
+}
+#notesDateTitleClothes{
+    position: absolute;
+    margin-top: 45vw;
+}
+
+#dateRemindMeClothes{
+    position: absolute;
+    margin-left: 12vw;
+    margin-top: 20.8vw;
+}
+#inputNotesClothes{
+    position: absolute;
+    margin-top: 50vw;
+}
+#categoryClothes{
+    position: absolute;
+    margin-top: 65vw;
+}
+.detailsInputbox{
+    background-color:rgb(20, 20, 20);
+    color: #ffffff;
+    height:8vw;
+    width:70vw;
+    border: none;
+    padding-left: 5vw;
+    outline: none;
+    border-bottom: .5vw solid #BF2E38;
+    font-size: 4vw;
+    font-family: 'Montserrat', sans-serif;
+}
+#selectByCategory{
+    color: rgb(167, 167, 167);
+    width: 40vw;
+    font-size: 5vw;
+    border: none;
+    position: absolute;
+    margin-top: 75vw;
+}
+.submitBttn{
+    padding-top: 2vw;
+    width: 23vw;
+    height: 6vw;
+    background-color: #BF2E38;
+    color: #ffffff;
+    font-size: 3.5vw;
+    outline: none;
+    border: none;
+    border-radius: 5vw;
+    margin-top: 30vw;
+    margin-bottom: 10vw;
+    margin-left: 28vw;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+.submit{
+    width: 23vw;
+    height: 8vw;
+    background-color: #BF2E38;
+    color: #ffffff;
+    font-size: 3.5vw;
+    outline: none;
+    border: none;
+    border-radius: 5vw;
+    margin-top: 110vw;
+    margin-left: 28vw;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+#formDeleteInventory{
+    margin-left: 52vw;
+    margin-top: -8vw;
+}
+#resultsEmergencyKit{
+    margin-top: 32vw;
+}
+#resultsDocuments{
+    margin-top: 32vw;
+}
+#resultsMedicines{
+    margin-top: 32vw;
+}
+#resultsFoods{
+    margin-top: 32vw;
+}
+#resultsClothes{
+    margin-top: 32vw;
+} 
+
+#submitItemInventory{
+    background-color: #BF2E38;
+    position: absolute;
+    z-index: 16;
+    visibility: visible;
+}
+#btncloseUpdate{
+    background-color: rgb(20, 20, 20);
+    margin-left: 19vw;
+    margin-bottom: 0vw;
+}
+#alert{
+    position: absolute;
+    z-index: 20; 
+    width: 60vw;
+    height: 30vh;
+    background-color: rgb(20, 20, 20);
+    font-size: 5vw;
+    color: #ffffff;
+}
+#modalAlert{
+    position: absolute;
+    background-color: #BF2E38;
+    width: 56vw;
+    height: 35vw;
+    z-index: 20;
+    margin-top: 50vw;
+    margin-left: 15vw;
+    border-radius: 12vw;
+    color: white;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 6vw;
+    padding: 7vw;
+    visibility: hidden;
+}
+#modalAlertBtn{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 19vw;
+    height: 7vw;
+    padding-top: 2vw;
+    color: #BF2E38;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 4vw;
+    border-radius: 4vw;
+    margin-top: 85vw;
+    margin-left: 40vw;
+    z-index: 21;
+    visibility: hidden;
+
+}
+#addContactContainer{
+    position: absolute; 
+    background-color: rgb(20, 20, 20);
+    height: 100vh;
+    width: 100%;
+    z-index: 21;
+    visibility: hidden;
+}
+.addContactInput{
+    background-color: rgb(255, 255, 255);
+    top: 25vw;
+    left: 18vw;
+    width: 60vw;
+    height: 10vw;
+    position: absolute;                  
+    border-radius: 8vw;
+    border: none;
+    font-size: 4vw;
+    padding-left: 5vw;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(17, 17, 17);
+    z-index: 21;
+
+}
+#addEmail{
+    margin-top:22vw;
+}
+#addNumber{
+    margin-top: 47vw;
+}
+#addDetails{
+    margin-top: 72vw;
+    height: 40vw;
+}
+.addContactTitle{
+    top: 16vw;
+    left: 14vw;
+    position: absolute;                  
+    font-size: 6vw;
+    padding-left: 5vw;
+    font-family: 'Montserrat', sans-serif;
+    color: #BF2E38;
+    z-index: 21;
+}
+
+#emailId{
+    margin-top:22vw;
+}
+#contactNumId{
+    margin-top: 47vw;
+}
+#detailId{
+    margin-top: 72vw;
+}
+#submitAddContacts{
+    background-color: #BF2E38;
+    width: 22vw;
+    height: 8vw;
+    font-weight: 700;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4vw;
+    border-radius: 5vw;
+    border: none;
+    margin-top:145vw;
+    margin-left: 42vw;
+}
+#contactsContainer{
+    height:100% ;
+    width:100vw ;
+    background-color: rgb(17, 17, 17);
+    position: absolute;
+    z-index: 19;
+    visibility: hidden;
+    margin-top: -0vw;
+    border-radius: 0;
+}
+#modalInside{
+    margin-left: -70.5vw;
+    width: 70vw;
+    background-color: #BF2E38;
+    position: absolute;
+    z-index: 21;
+    margin-left: 9vw;
+}
+#createNameInside{
+    color:rgb(17, 17, 17) ;
+    font-weight: 700;
+
+}
+#btnCloseContacts{
+    margin-top: -61vw;
+    margin-left:26vw ;
+    background-color: #BF2E38;
+}
+#closeContactContainer{
+    background-color: #BF2E38;
+    position: absolute;
+    z-index: 22;
+    width: 22vw;
+    height: 7vw;
+    margin-top: 140vw;
+    margin-left: 40vw;
+    border-radius: 5vw;
+    text-align: center;
+    padding-top: 2.5vw;
+    visibility: hidden;
+}
+#createName{
+    color:#BF2E38;
+    margin-bottom: 5vw;
+}

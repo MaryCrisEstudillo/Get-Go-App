@@ -2,11 +2,13 @@
     outline: none;
     margin: 0;
 }
+
 body{
     background-size: cover;
     background-color: #BF2E38;
-    overflow: hidden; 
+    overflow-x: hidden; 
 }
+
 #map{
     position: absolute;
     background-color: #ffffff;
@@ -87,6 +89,7 @@ body{
     height: 1.5vw;
     background-color: rgb(20, 20, 20);
     border-radius: 4vw;
+    font-size: 0;
 }
 #hamBrg2{
     margin-top:3vw;
@@ -112,9 +115,6 @@ body{
     font-family: 'Montserrat', sans-serif;
     color: rgb(255, 255, 255);
 }
-.addItemIputvalues::placeholder{
-    color: rgb(85, 85, 85);
-}
 .submitIputvalues{
     position: absolute;
     left:83vw;
@@ -128,6 +128,13 @@ body{
     font-size: 5vw;
     visibility: hidden;
 }
+
+
+
+.addItemIputvalues::placeholder{
+    color: rgb(85, 85, 85);
+}
+
 ::placeholder{
     color: rgb(201, 201, 201);
 }
@@ -882,3 +889,321 @@ box-shadow: 0vw -.7vw .5vw -.5vw rgba(0, 0, 0, 0.363);
     color:#BF2E38;
     margin-bottom: 5vw;
 }
+
+@media (orientation:landscape){
+    #logo{
+        position: absolute;
+        top: 3vw;
+        left: 5vw;
+        color: white;
+        font-weight: 700;
+        font-size: 3vw;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .hamburgerNav{
+        position: absolute;
+        width: 13vw;
+        height: 2.5vw;
+        background-color: rgb(20, 20, 20);
+        border-radius: 4vw;
+        color: white;
+        font-size: 1.5vw;
+        text-align: center;
+        margin:-4.2vw 0vw 0vw 12vw;
+        padding-top: .8vw;
+        font-family: 'Montserrat', sans-serif;
+        color: #BF2E38;
+    }
+    #hamBrg2{
+        margin:-4.2vw 0vw 0vw 12vw;
+    }
+    #hamBrg3{
+        margin:-4.2vw 0vw 0vw 12vw;
+    }
+    .addItemIputvalues{
+        background-color: rgb(20, 20, 20);
+        top: 3vw;
+        left: 66vw;
+        width:23vw;
+        height: 3.3vw;
+        position: absolute;                     /*////must hide////*/
+        border-radius: 8vw;
+        border: none;
+        font-size: 1.5vw;
+        padding-left: 5vw;
+        font-family: 'Montserrat', sans-serif;
+        color: rgb(255, 255, 255);
+    }
+    .submitIputvalues{
+        position: absolute;
+        left:90.5vw;
+        top: 3.4vw;
+        width: 2.7vw;
+        height: 2.7vw;
+        border-radius: 20vw;
+        border: none;
+        color: white;
+        background-color: #BF2E38;
+        font-size: 2vw;
+        visibility: hidden;
+    }
+
+    .listContainersByCategory{
+        height: 100vh;
+        margin-top: 10vw;
+
+    
+    } 
+    .listContainersByCategory b {
+        position: absolute;
+        width: 100vw;
+        left: 0vw;
+        margin-top: 5vw;
+        color: #BF2E38;
+        font-size: 2vw;
+    }
+
+    #modalAlert{
+        position: absolute;
+        background-color: #BF2E38;
+        width: 30vw;
+        height: 15vw;
+        z-index: 20;
+        margin-top: 15vw;
+        margin-left: 30vw;
+        border-radius: 4vw;
+        color: white;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 3vw;
+        padding: 7vw;
+        visibility: hidden;
+    }
+    #modalAlertBtn{
+        width: 10vw;
+        height: 3vw;
+        padding-top: 1vw;
+        font-size: 2vw;
+        border-radius: 4vw;
+        margin-top: 36vw;
+        margin-left: 47vw;
+        z-index: 21;
+        visibility: hidden;
+    
+    }
+    #mainWitB{
+        text-align: center;
+        padding-top: 4vw;
+        font-size: 2.5vw;
+        font-family: 'Montserrat', sans-serif;
+        color: #BF2E38;
+        margin-bottom:20vw;
+    }
+    .listEach{
+        background-color: rgb(20, 20, 20);
+        /* border:.5vw solid black; */
+        height: 20vw;
+        width: 90vw;
+        padding-top: 3vw;
+        padding-left: 10vw;
+        color: #c5c5c5;
+        font-weight: 700;
+        font-size: 1.5vw ;
+        margin-top: -14vw;
+        box-shadow: 0vw -.7vw 1.5vw -.7vw rgba(255, 255, 255, 0.418);
+        border-radius: 10vw 10vw 0vw 0vw;
+        /* border-radius: 15vw 15vw 0vw 0vw; */
+        }
+        .createdbtnDiv{
+            background-color: #BF2E38;
+            width: 3vw;
+            height: .8vw;
+            margin-left: 68vw;
+            margin-top: -2vw;
+            cursor: pointer;
+            border-radius: 1.5vw;
+        }
+        .listEach img{
+            position: absolute;
+            margin-top: -5vw;
+            padding: 1vw;
+            background-color: rgb(20, 20, 20);;
+            width:3vw;
+            height: 2vw;
+            margin-left: 35vw;
+            cursor: pointer;
+            border-radius: 3vw;
+            box-shadow: 0vw -.7vw .5vw -.5vw rgba(255, 255, 255, 0.418);
+    }
+
+    .modalList{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 2vw ;
+        list-style: none;
+        padding-bottom: 5vw;
+        margin-top: 5vw;
+        color: #c5c5c5;}
+    
+    
+    .modalReminder{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2vw ;
+        color: #ffffff;
+    }
+    .modalTitle{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2vw ;
+        color: #BF2E38;
+    }
+    .modalListBtnClose{
+        position: absolute;
+        margin-top: -62vw;
+        padding: 1vw;
+        background-color: rgb(20, 20, 20);
+        width:2.8vw;
+        height: 1.8vw;
+        margin-left: 33vw;
+        cursor: pointer;
+        border-radius: 3vw;
+        box-shadow: 0vw -.7vw .5vw -.5vw rgba(255, 255, 255, 0.418);
+    }
+    .submitBttn{
+        padding-top: 2vw;
+        width: 12vw;
+        height: 4vw;
+        background-color: #BF2E38;
+        color: #ffffff;
+        font-size: 2vw;
+        outline: none;
+        border: none;
+        border-radius: 5vw;
+        margin-top: 10vw;
+        margin-bottom: 5vw;
+        margin-left: 33vw;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .modalClass{
+        position: absolute;
+        background-color: rgb(20, 20, 20);
+        padding-bottom:30vw;
+        font-family: 'Montserrat', sans-serif;
+        width: 88vw;
+        padding-top: 8vw;
+        padding-left: 12vw;
+        padding-bottom: 2vw;
+        color: #c5c5c5;
+        font-weight: 700;
+        font-size: 4vw ;
+        margin-top: 57vw;
+        box-shadow: 0vw -.7vw 1.5vw -.4vw rgba(255, 255, 255, 0.418);
+        border-radius: 10vw 10vw 10vw 10vw;
+        z-index: 17;
+        visibility: hidden;
+    }
+    #menuContainer{
+        height: 173.9vw;
+        width: 40vw;
+        background-color: rgb(20, 20, 20);
+        margin-top: -3.8VW;
+        }
+    #menuButtonsContainer1{
+            display: flex;
+            width: 40vw;
+            flex-direction: column;
+            position: absolute;
+            z-index: 16;
+            align-items: center;
+            height: 145.3vw;
+            background-color:#BF2E38;
+            margin-top: 20VW;
+            border-radius: 8vw 8vw 0vw 0vw;
+            box-shadow: 0vw -.7vw .5vw -.5vw rgba(0, 0, 0, 0.363);
+            }
+            .menuButtons{
+
+                width: 35vw;
+                height: 5vw;
+                position: absolute;
+                z-index: 1;
+                font-size: 2.5vw;
+                font-weight: 700;
+                color: rgb(255, 255, 255);
+                font-family: 'Montserrat', sans-serif;
+                text-align: center;
+            }
+            #whatsInTheBagMenuBtns{
+                position: absolute;
+                font-size: 2.5vw;
+                color: rgb(0, 0, 0);
+                font-family: 'Montserrat', sans-serif;
+                margin-top: 5vw;
+                left: 8.5vw;
+                z-index: 1;
+            }
+#menuButtonsContainer2{
+    height: 65vw;
+    background-color:rgb(20, 20, 20);
+    margin-top: 110vw;
+    border-radius: 8vw 8vw 0vw 0vw;
+    box-shadow: 0vw -.7vw .5vw -.5vw rgba(255, 255, 255, 0.418);
+    width: 40vw;
+    }
+    #otherHelp{
+        position: absolute;
+        font-size: 2.5vw;
+        color: #74282c;
+        font-family: 'Montserrat', sans-serif;
+        margin-top: 8vw;
+        left: 13vw;
+        z-index: 1;
+    }
+    .menubuttonsHelp{
+        top: 6vw;
+        width: 35vw;
+        height: 5vw;
+        position: absolute;
+        z-index: 1;
+        font-size: 2vw;
+        font-weight: 700;
+        color: #BF2E38;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        left: 3vw;
+        /* padding-top: 1vw; */
+    
+    }
+
+    #addContactContainer{
+        position: absolute; 
+        background-color: rgb(20, 20, 20);
+        height: 400%;
+        width: 100%;
+        z-index: 21;
+        visibility: hidden;
+    }
+    .addContactInput{
+        background-color: rgb(255, 255, 255);
+        top: 15vw;
+        left: 38vw;
+        width: 25vw;
+        height: 4vw;
+        position: absolute;                  
+        border-radius: 8vw;
+        border: none;
+        font-size: 2vw;
+        padding-left: 5vw;
+        font-family: 'Montserrat', sans-serif;
+        color: rgb(17, 17, 17);
+        z-index: 21;
+    
+    }
+}
+
+
+
+
+
